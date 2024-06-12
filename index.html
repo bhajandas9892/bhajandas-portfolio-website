@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/05149d9ed7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Certifications</a></li>
+                    <li><a href="#protfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi,I'm <span>Bhajandas</span><br> Vaishnav From TCET</h1>
+            </div>
+        </div>
+    </div>
+<!----------about------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="bg1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <Br>
+                    <p>Motivated IT engineering student, with a strong background in Java programming, data structure and algorithm ,web development and Cybersecurity poised to contribute technical expertise, problem-solving skills, and leadership abilities to a dynamic team. As an NCC cadet at TCET, I am dedicated to both personal and professional growth.</p>
+                    <div class="tab-titles ">
+                        <p class="tab-links  active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab " id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML ,CSS ,JS ,React.js ,Spring Boot</li>
+                            <li><span>DSA</span><br>Done Data Structured and Algorithm By Java Language</li>
+                            <li><span>Cybersecurity</span><br>Network Security ,Risk Management ,Threat Analysis ,Incident Response ,Security Audits</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>18 dec 2023 - 18 jan 2024</span><br>Frontend Developer At Konma Org</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Pursuing B.E. professional Degree As a IT Engineering from TCET</li>
+                            <li><span>2021</span><br>Passed From Higher Secondary Education </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------Services---------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Certification</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Development</h2>
+                    <span>From <h3>Udemy</h3></span>
+                    <!-- <a href="">learn more</a> -->
+                </div>
+                <div>
+                    <h2>Data structure and Algorithm</h2>
+                   <span>From <h3>Apna College</h3></span>
+                    <!-- <a href="">learn more</a> -->
+                </div>
+                <div>
+                    <h2>CyberSecurity</h2>
+                    <span>From <h3>Google Coursera</h3></span>
+                    <!-- <a href="">learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------portfolio--------- -->
+
+    <div id="protfolio">
+        <div class="container">
+           <h1 class="sub-title">My projects</h1>
+           <div class="work-list">
+            <div class="work">
+                <img src="image1.jpg" >
+                <div class="layer">
+                    
+                <h3>Backend Development</h3>
+                <p>I have Developed The Backend Application For Employee Management</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image2.png" >
+                <div class="layer">
+                    
+                    <h3>Portfolio Website Development</h3>
+                    <p>I have Developed The Portfolio Website For Myself</p>
+               
+                </div>
+                </div>
+            <div class="work">
+                <img src="image3.png" >
+                <div class="layer">
+                    
+                <h3>Full Stack Development</h3>
+                <p>I have Developed The Full Stack Website Using React.js and Spring Boot</p>
+                </div>
+            </div>
+           </div>
+           <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- --------contact------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contanct Me</h1>
+                    <p><span><i class="fa-solid fa-envelope"></i></span>bhajandas9892@gmail.com</p>
+                    <p><span><i class="fa-solid fa-phone"></i></span>8104867443</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="RESUME.docx" download class="btn btn2">Download RESUME</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required >
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2">Sumbit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-solid fa-copyright"></i> copyright @ Bhajandas. Made By Myself Only</p>
+        </div>
+    </div>
+    
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+            
+        }
+    </script>
+
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzHcapDfMWW59X9Ak1w_WiBYoYgAPXq7ZKXxjlkZBbmfafB0dcDr4jIg5RD121qPjQzOg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent Succesfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
